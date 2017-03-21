@@ -13,17 +13,17 @@
 #include <fstream>
 typedef std::chrono::high_resolution_clock Clock;
 
-//mesure de temps code pis sur http://stackoverflow.com/questions/3220477/how-to-use-clock-in-c
+//mesure de temps code pris sur http://stackoverflow.com/questions/3220477/how-to-use-clock-in-c
 
 using namespace std;
 using namespace cv;
 Mat image;
 
- #define ITERATIONMAX 150
+ #define ITERATIONMAX 400
  #define V 4
  #define HEIGHT 500
  #define WIDTH 500
-#define Nb_Thread 1
+#define Nb_Thread 10
 
 
 long double r=0.400,i=-0.192;
