@@ -120,13 +120,7 @@ std::complex<long double> c(r, i);// constante c
           image.at<Vec3b>(x,y)[1]=0; 
           image.at<Vec3b>(x,y)[2]=0;
         }
-        else{//sinon on  est pas dans la suite et on met de la couleur selon le nombre d'itération 
-          unsigned char couleur=(int)((float)iteration/(float)ITERATIONMAX*360);
-          unsigned char r,g,b;
-	  hsvtorgb( &r,&g,&b,couleur,150,150);//hsvtorgb(rouge,bleu,vert,teinte,saturation,brillance)
-	  image.at<Vec3b>(x,y)[0]=b;
-          image.at<Vec3b>(x,y)[1]=g;
-          image.at<Vec3b>(x,y)[2]=r; 
+       =r; 
       }
     } 
   }
